@@ -16,7 +16,7 @@ _Easily set up a local development environment_
 
 - fork & clone repo
 - `npm install`
-- `npm run import-trpc-api`
+- `npm run trpc-api-import`
 - use latest tRPC API in your app 🚀
 
 ## Example Repo
