@@ -2,8 +2,13 @@
 
 Minimal tRPC frontend boilerplate. Easily consume fully typesafe APIs.
 
-Monorepos are great, but if frontend and backend are in separate repositories, checkout this boilerplate.  
-It's useful when strict separation of backend and frontend domain & developers is targeted (larger teams/companies).
+Monorepos are great, but sometimes we are targeting frontend and backend as separate repositories:
+
+- separation/encapsulation of backend and frontend domain (except what must be exposed to both through API).
+- separation of backend and frontend developers (larger teams/companies).
+- separation of backend and frontend CI/CD pipelines.
+
+... in that case checkout this boilerplate.
 
 ## Running
 
