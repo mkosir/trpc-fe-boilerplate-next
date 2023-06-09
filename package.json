@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "import-trpc-api": "ts-node importTrpcApi/index.ts",
+    "import-trpc-api": "ts-node trpc-api-import/index.ts",
     "prepare": "husky install",
     "dev": "open http://localhost:3000 && next dev",
     "build": "next build",

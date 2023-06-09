@@ -26,7 +26,7 @@ const TRPC_API_DIST = {
   ],
 } as const satisfies TrpcApiDist;
 
-const importTrpcApi = () => {
+const trpcApiImport = () => {
   const octokit = new Octokit({
     // Provide token if using private GitHub repository
     // auth: <GITHUB_TOKEN>,
@@ -51,4 +51,4 @@ const importTrpcApi = () => {
   console.log('### tRPC API successfully imported. ###');
 };
 
-importTrpcApi();
+trpcApiImport();
