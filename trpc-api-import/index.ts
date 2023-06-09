@@ -16,11 +16,11 @@ const TRPC_API_DIST = {
   repository: 'trpc-api-boilerplate',
   filePaths: [
     {
-      sourcePath: 'trpc-api/dist/index.d.ts',
+      sourcePath: 'trpc-api-export/dist/index.d.ts',
       targetPath: 'src/common/trpc-api-boilerplate/api-types/index.d.ts',
     },
     {
-      sourcePath: 'trpc-api/dist/index.js',
+      sourcePath: 'trpc-api-export/dist/index.js',
       targetPath: 'src/common/trpc-api-boilerplate/api-types/index.js',
     },
   ],
