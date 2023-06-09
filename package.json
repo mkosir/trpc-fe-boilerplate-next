@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "import-trpc-api": "ts-node importTrpcApi/index.ts",
     "dev": "open http://localhost:3000 && next dev",
     "build": "next build",
     "start": "next start",
@@ -11,8 +12,7 @@
     "lint-staged-husky": "lint-staged",
     "tsc": "tsc -p tsconfig.json",
     "format-lint": "prettier --config .prettierrc --check --ignore-unknown .",
-    "format-fix": "prettier --config .prettierrc --write --ignore-unknown -l .",
-    "import-trpc-api": "ts-node importTrpcApi/index.ts"
+    "format-fix": "prettier --config .prettierrc --write --ignore-unknown -l ."
   },
   "dependencies": {
     "@trpc/client": "10.29.1",
