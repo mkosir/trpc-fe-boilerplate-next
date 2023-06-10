@@ -61,7 +61,7 @@ jobs:
         run: npm run tsc
 
   deploy:
-    name: Deploy App - Stage 🚀
+    name: Deploy 🚀
     needs: [build, lint, tsc]
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
