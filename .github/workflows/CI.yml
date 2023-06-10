@@ -5,6 +5,11 @@ on:
     branches:
       - main
 
+env:
+  CACHE_PATHS_BUILD: |
+    ./build-next-static
+  CACHE_KEY_BUILD: build-${{ github.sha }}-${{ github.ref_type }}
+
 jobs:
   build:
     name: Build 🏗️
@@ -19,6 +24,13 @@ jobs:
 
       - name: Build 🏗️
         run: npm run build
+
+      - name: Cache build ⚡
+        id: cache_build
+        uses: actions/cache@v3
+        with:
+          path: ${{ env.CACHE_PATHS_BUILD }}
+          key: ${{ env.CACHE_KEY_BUILD }}
 
   lint:
     name: Lint ✅
@@ -47,3 +59,26 @@ jobs:
 
       - name: TypeScript Compiler 🔎
         run: npm run tsc
+
+  deploy:
+    name: Deploy App - Stage 🚀
+    needs: [build, lint, tsc]
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    environment:
+      name: App
+      url: https://mkosir.github.io/trpc-fe-boilerplate/
+
+    steps:
+      - uses: actions/cache@v3
+        with:
+          path: ${{ env.CACHE_PATHS_BUILD }}
+          key: ${{ env.CACHE_KEY_BUILD }}
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: build-next-static
+          clean: true
