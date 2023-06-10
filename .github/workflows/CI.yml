@@ -78,7 +78,6 @@ jobs:
       - name: test 1
         run: |
           ls -la
-          ls build-next-static
 
       - uses: actions/cache@v3
         with:
