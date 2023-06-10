@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  CACHE_PATH_BUILD: ./build-next-static
+  CACHE_PATH_BUILD: build-next-static
   CACHE_KEY_BUILD: build-${{ github.sha }}-${{ github.ref_type }}
 
 jobs:
@@ -81,5 +81,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: ./build-next-static
+          folder: build-next-static
           clean: true
