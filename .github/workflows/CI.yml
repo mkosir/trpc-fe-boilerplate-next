@@ -22,7 +22,9 @@ jobs:
         uses: ./.github/workflows/actions/setup_node-cache_dep-install_dep
 
       - name: Build 🏗️
-        run: npm run build
+        run: |
+          npm run build
+          ls -la
 
       - name: Cache build ⚡
         id: cache_build
@@ -72,10 +74,18 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
 
+      - name: test 1
+        run: |
+          ls -la
+
       - uses: actions/cache@v3
         with:
           path: ${{ env.CACHE_PATH_BUILD }}
           key: ${{ env.CACHE_KEY_BUILD }}
+
+      - name: test 2
+        run: |
+          ls -la
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
