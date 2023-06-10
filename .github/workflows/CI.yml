@@ -6,7 +6,8 @@ on:
       - main
 
 env:
-  CACHE_PATH_BUILD: build-next-static
+  CACHE_PATHS_BUILD: |
+    ./build-next-static
   CACHE_KEY_BUILD: build-${{ github.sha }}-${{ github.ref_type }}
 
 jobs:
@@ -30,7 +31,7 @@ jobs:
         id: cache_build
         uses: actions/cache@v3
         with:
-          path: ${{ env.CACHE_PATH_BUILD }}
+          path: ${{ env.CACHE_PATHS_BUILD }}
           key: ${{ env.CACHE_KEY_BUILD }}
 
   lint:
@@ -77,15 +78,17 @@ jobs:
       - name: test 1
         run: |
           ls -la
+          ls build-next-static
 
       - uses: actions/cache@v3
         with:
-          path: ${{ env.CACHE_PATH_BUILD }}
+          path: ${{ env.CACHE_PATHS_BUILD }}
           key: ${{ env.CACHE_KEY_BUILD }}
 
       - name: test 2
         run: |
           ls -la
+          ls build-next-static
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
