@@ -14,8 +14,9 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "baseUrl": "src",
     "paths": {
-      "@/*": ["./src/*"]
+      ".": ["."]
     }
   },
   "ts-node": {
@@ -23,6 +24,6 @@
       "module": "CommonJS"
     }
   },
-  "include": ["next-env.d.ts", ".eslintrc.js", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": [".", ".eslintrc.js"],
+  "exclude": ["node_modules", ".next"]
 }

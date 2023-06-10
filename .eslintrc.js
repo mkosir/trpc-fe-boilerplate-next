@@ -64,7 +64,16 @@ module.exports = {
       },
     },
   ],
-  ignorePatterns: ['!.*', 'node_modules', '.next', 'dist', 'compiled', 'build-next-static', 'next-env.d.ts'],
+  ignorePatterns: [
+    '!.*',
+    'node_modules',
+    '.next',
+    'dist',
+    'compiled',
+    'build-next-static',
+    'api-types',
+    'next-env.d.ts',
+  ],
 
   settings: {
     'import/resolver': {
