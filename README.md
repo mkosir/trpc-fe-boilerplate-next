@@ -27,5 +27,5 @@ Example backend API repository - [tRPC API Boilerplate](https://github.com/mkosi
 
 <!-- Badges -->
 
-[ci-badge]: https://github.com/mkosir/trpc-api-boilerplate/actions/workflows/CI.yml/badge.svg
-[ci-url]: https://github.com/mkosir/trpc-api-boilerplate/actions/workflows/CI.yml
+[ci-badge]: https://github.com/mkosir/trpc-fe-boilerplate/actions/workflows/CI.yml/badge.svg
+[ci-url]: https://github.com/mkosir/trpc-fe-boilerplate/actions/workflows/CI.yml
