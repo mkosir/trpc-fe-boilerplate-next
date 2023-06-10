@@ -5,7 +5,7 @@
   "scripts": {
     "trpc-api-import": "ts-node trpc-api-import/index.ts",
     "prepare": "husky install",
-    "dev": "open http://localhost:3000 && next dev",
+    "dev": "open http://localhost:3000 && NEXT_PUBLIC_BASE_URL_TRPC_API=http://localhost:4000/trpc next dev",
     "build": "next build",
     "lint": "next lint",
     "lint-fix": "eslint --fix .",

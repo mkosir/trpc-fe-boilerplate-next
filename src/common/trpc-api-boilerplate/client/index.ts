@@ -7,8 +7,6 @@ import { AppRouter } from '../api-types';
 export const trpcApiBoilerplateClient = createTRPCReact<AppRouter>();
 
 export const trpcApiBoilerplateClientProvider = trpcApiBoilerplateClient.createClient({
-  links: [
-    httpBatchLink({ url: process.env.NEXT_PUBLIC_BASE_URL_TRPC_API_BOILERPLATE ?? 'http://localhost:4000/trpc' }),
-  ],
+  links: [httpBatchLink({ url: process.env.NEXT_PUBLIC_BASE_URL_TRPC_API })],
   transformer: superjson,
 });
