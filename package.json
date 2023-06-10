@@ -26,8 +26,8 @@
     "zod": "3.21.4"
   },
   "devDependencies": {
-    "@types/node": "20.2.5",
-    "@types/react": "18.2.9",
+    "@types/node": "20.2.6",
+    "@types/react": "18.2.10",
     "@types/react-dom": "18.2.4",
     "@typescript-eslint/eslint-plugin": "5.59.9",
     "@typescript-eslint/parser": "5.59.9",
