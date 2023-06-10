@@ -15,6 +15,8 @@
     "format-fix": "prettier --config .prettierrc --write --ignore-unknown -l ."
   },
   "dependencies": {
+    "@tanstack/react-query": "4.29.12",
+    "@tanstack/react-query-devtools": "4.29.12",
     "@trpc/client": "10.29.1",
     "@trpc/react-query": "10.29.1",
     "@trpc/server": "10.29.1",
