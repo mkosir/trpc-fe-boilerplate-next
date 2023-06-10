@@ -1,5 +1,7 @@
 # tRPC Frontend Boilerplate
 
+[![CI][ci-badge]][ci-url]
+
 Minimal tRPC frontend boilerplate. Easily consume fully typesafe APIs.
 
 Monorepos are great, but sometimes we are targeting backend and frontend as separate (mono)repositories:
@@ -22,3 +24,8 @@ _Easily set up a local development environment_
 ## Example Repo
 
 Example backend API repository - [tRPC API Boilerplate](https://github.com/mkosir/trpc-api-boilerplate)
+
+<!-- Badges -->
+
+[ci-badge]: https://github.com/mkosir/trpc-api-boilerplate/actions/workflows/CI.yml/badge.svg
+[ci-url]: https://github.com/mkosir/trpc-api-boilerplate/actions/workflows/CI.yml
