@@ -11,7 +11,7 @@ export const HomePage = () => {
 
   return (
     <div>
-      <img src="./heisenberg.png" alt="heisenberg" width={120} />
+      <img src="./heisenberg.png" alt="heisenberg" width={110} />
       <div>tRPC Frontend Boilerplate</div>
       <button onClick={handleSeedDb}>Seed DB</button>
     </div>
