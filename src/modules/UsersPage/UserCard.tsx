@@ -2,12 +2,20 @@ import { User } from 'common/trpc-api-boilerplate';
 
 export type UserCardProps = {
   user: User;
+  onUserDelete: (userId: string) => void;
 };
 
-export const UserCard = ({ user }: UserCardProps) => {
+export const UserCard = ({ user, onUserDelete }: UserCardProps) => {
   return (
-    <div>
-      <div>{user.name}</div>
+    <div className="flex m-3 p-3 rounded-md shadow shadow-blueSky-150/50">
+      <div>
+        <div>{user.name}</div>
+        <div className="italic text-gray-400">{user.username}</div>
+        <div className="capitalize">{user.role}</div>
+        {/* {isDeletingUser && <Progress />} */}
+        <button onClick={() => onUserDelete(user.id)}>Delete</button>
+      </div>
+      <img src={user.imageUrl ?? '/no-user.jpg'} alt={user.username} className="rounded ml-2 h-24" />
     </div>
   );
 };
