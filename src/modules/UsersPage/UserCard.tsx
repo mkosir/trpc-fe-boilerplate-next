@@ -7,7 +7,7 @@ export type UserCardProps = {
 
 export const UserCard = ({ user, onUserDelete }: UserCardProps) => {
   return (
-    <div className="flex justify-between w-72 mr-4 mb-4 p-3 rounded-md bg-blueSky-100/5 shadow shadow-blueSky-150/50">
+    <div className="flex justify-between w-72 mr-4 mb-4 p-3 rounded-md bg-blueSky-50/5 shadow shadow-blueSky-500/60">
       <div>
         <div>{user.name}</div>
         <div className="italic text-gray-400">{user.username}</div>
