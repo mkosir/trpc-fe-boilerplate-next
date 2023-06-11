@@ -1,4 +1,4 @@
-import { trpcApiBoilerplateClient } from 'common/trpc-api-boilerplate';
+import { SharedSquare, USER_ROLES, trpcApiBoilerplateClient } from 'common/trpc-api-boilerplate';
 
 export const HomePage = () => {
   const seedDbMutation = trpcApiBoilerplateClient.util.seedDb.useMutation({
@@ -8,6 +8,9 @@ export const HomePage = () => {
   const handleSeedDb = () => {
     seedDbMutation.mutate();
   };
+
+  console.log('Exported - SharedSquare:', SharedSquare);
+  console.log('Exported - USER_ROLES:', USER_ROLES);
 
   return (
     <div className="flex justify-center text-center mt-10">
