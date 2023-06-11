@@ -80,7 +80,7 @@ jobs:
           path: ${{ env.CACHE_PATHS_BUILD }}
           key: ${{ env.CACHE_KEY_BUILD }}
 
-      - name: Lint ✅
+      - name: Disable jekyll
         run: touch ./build-next-static/.nojekyll
 
       - name: Deploy 🚀
