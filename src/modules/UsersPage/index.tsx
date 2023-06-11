@@ -6,8 +6,7 @@ export const UsersPage = () => {
   const utils = trpcApiBoilerplateClient.useContext();
 
   const handleUserDeleteSuccess = async (users: Users) => {
-    console.log('🔎 Log ~ handleUserDeleteSuccess ~ user:', users);
-
+    console.info('Deleted user: ', users);
     await utils.user.list.invalidate();
   };
 
