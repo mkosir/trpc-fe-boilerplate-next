@@ -5,8 +5,8 @@ import { UserCard } from './UserCard';
 export const UsersPage = () => {
   const utils = trpcApiBoilerplateClient.useContext();
 
-  const handleUserDeleteSuccess = async (user: Users) => {
-    console.log('🔎 Log ~ handleUserDeleteSuccess ~ user:', user);
+  const handleUserDeleteSuccess = async (users: Users) => {
+    console.log('🔎 Log ~ handleUserDeleteSuccess ~ user:', users);
 
     await utils.user.list.invalidate();
   };
