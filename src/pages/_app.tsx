@@ -19,9 +19,11 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <trpcApiBoilerplateClient.Provider client={trpcApiBoilerplateClientProvider} queryClient={reactQueryClient}>
         <QueryClientProvider client={reactQueryClient}>
-          <div className="flex">
+          <div className="flex p-3 bg-blueSky-100/40">
             <Link href="/">Home</Link>
-            <Link href="/users">Users</Link>
+            <Link href="/users" className="mx-4">
+              Users
+            </Link>
             <Link href="/batches">Batches</Link>
           </div>
           <Component {...pageProps} />
