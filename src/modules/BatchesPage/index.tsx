@@ -6,11 +6,11 @@ export const BatchesPage = () => {
   return (
     <div>
       <h3>💊 Batches</h3>
-      <div style={{ paddingBottom: '10px', fontStyle: 'italic' }}>Total No. of batches: {batches?.length}</div>
+      <div className="italic my-2">Total No. of batches: {batches?.length}</div>
       {!batches ? (
         'Loading...'
       ) : (
-        <ul>
+        <ul className="list-disc list-inside">
           {batches.map((batch) => (
             <li key={batch.id}>
               {batch.title} - {batch.weight}kg - {batch.purity}%
