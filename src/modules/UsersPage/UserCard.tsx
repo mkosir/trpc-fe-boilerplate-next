@@ -13,7 +13,12 @@ export const UserCard = ({ user, onUserDelete }: UserCardProps) => {
         <div className="italic text-gray-400">{user.username}</div>
         <div className="capitalize">{user.role}</div>
         {/* {isDeletingUser && <Progress />} */}
-        <button onClick={() => onUserDelete(user.id)}>Delete</button>
+        <button
+          className="bg-blueSky-400 hover:bg-blueSky-500 active:bg-blueSky-600 text-xs text-white p-0.5 px-2 rounded"
+          onClick={() => onUserDelete(user.id)}
+        >
+          Delete
+        </button>
       </div>
       <img src={user.imageUrl ?? '/no-user.jpg'} alt={user.username} className="rounded ml-4 h-24" />
     </div>
