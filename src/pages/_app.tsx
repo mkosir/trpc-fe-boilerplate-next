@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         <title>tRPC Frontend Boilerplate</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="./favicon.ico" />
+        <link rel="icon" href="favicon.ico" />
       </Head>
       <trpcApiBoilerplateClient.Provider client={trpcApiBoilerplateClientProvider} queryClient={reactQueryClient}>
         <QueryClientProvider client={reactQueryClient}>
