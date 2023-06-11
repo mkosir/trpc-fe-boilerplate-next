@@ -2,7 +2,7 @@
 const nextConfig = {
   output: 'export',
   distDir: 'build-next-static',
-  // assetPrefix: './',
+  assetPrefix: './', // GitHub pages CDN
   swcMinify: true,
   reactStrictMode: true,
 };
