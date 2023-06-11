@@ -7,15 +7,17 @@ export const BatchesPage = () => {
     <div>
       <h3>💊 Batches</h3>
       <div style={{ paddingBottom: '10px', fontStyle: 'italic' }}>Total No. of batches: {batches?.length}</div>
-      {!batches
-        ? 'Loading...'
-        : batches.map((batch) => (
-            <div key={batch.id}>
-              <div>{batch.title}</div>
-              <div>{batch.weight}kg</div>
-              <div>{batch.purity}%</div>
-            </div>
+      {!batches ? (
+        'Loading...'
+      ) : (
+        <ul>
+          {batches.map((batch) => (
+            <li key={batch.id}>
+              {batch.title} - {batch.weight}kg - {batch.purity}%
+            </li>
           ))}
+        </ul>
+      )}
     </div>
   );
 };
