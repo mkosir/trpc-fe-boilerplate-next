@@ -25,7 +25,6 @@ jobs:
       - name: Build 🏗️
         run: |
           npm run build
-          ls -la
 
       - name: Cache build ⚡
         id: cache_build
