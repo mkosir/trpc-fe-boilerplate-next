@@ -2,6 +2,7 @@ import { QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import Link from 'next/link';
 
 import { reactQueryClient } from 'common/reactQueryClient';
 import { trpcApiBoilerplateClient, trpcApiBoilerplateClientProvider } from 'common/trpc-api-boilerplate';
@@ -18,9 +19,10 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <trpcApiBoilerplateClient.Provider client={trpcApiBoilerplateClientProvider} queryClient={reactQueryClient}>
         <QueryClientProvider client={reactQueryClient}>
-          <div>
-            <img src="./heisenberg.png" alt="heisenberg" width={85} />
-            <div>tRPC Frontend Boilerplate</div>
+          <div className="flex">
+            <Link href="/">Home</Link>
+            <Link href="/users">Users</Link>
+            <Link href="/batches">Batches</Link>
           </div>
           <Component {...pageProps} />
           <ReactQueryDevtools initialIsOpen={false} />
