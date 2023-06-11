@@ -26,7 +26,9 @@ export default function App({ Component, pageProps }: AppProps) {
             </Link>
             <Link href="/batches">Batches</Link>
           </div>
-          <Component {...pageProps} />
+          <div className="flex justify-center p-3">
+            <Component {...pageProps} />
+          </div>
           <ReactQueryDevtools initialIsOpen={false} />
         </QueryClientProvider>
       </trpcApiBoilerplateClient.Provider>
