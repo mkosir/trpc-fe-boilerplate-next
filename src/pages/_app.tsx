@@ -26,7 +26,7 @@ export default function App({ Component, pageProps }: AppProps) {
             </Link>
             <Link href="/batches">Batches</Link>
           </div>
-          <div className="flex justify-center p-3">
+          <div className="p-3">
             <Component {...pageProps} />
           </div>
           <ReactQueryDevtools initialIsOpen={false} />
