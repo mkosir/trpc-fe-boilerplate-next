@@ -18,6 +18,10 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <trpcApiBoilerplateClient.Provider client={trpcApiBoilerplateClientProvider} queryClient={reactQueryClient}>
         <QueryClientProvider client={reactQueryClient}>
+          <div>
+            <img src="./heisenberg.png" alt="heisenberg" width={85} />
+            <div>tRPC Frontend Boilerplate</div>
+          </div>
           <Component {...pageProps} />
           <ReactQueryDevtools initialIsOpen={false} />
         </QueryClientProvider>

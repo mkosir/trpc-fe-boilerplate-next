@@ -52,12 +52,6 @@ module.exports = {
 
   overrides: [
     {
-      files: ['ProcessEnv.d.ts'],
-      rules: {
-        '@typescript-eslint/consistent-type-definitions': 'off',
-      },
-    },
-    {
       files: ['src/**/*.stories.*', 'src/pages/**/*'],
       rules: {
         'import/no-default-export': 'off',
