@@ -20,14 +20,14 @@
     "@trpc/client": "10.29.1",
     "@trpc/react-query": "10.29.1",
     "@trpc/server": "10.29.1",
-    "next": "13.4.4",
+    "next": "13.4.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "superjson": "1.12.3",
     "zod": "3.21.4"
   },
   "devDependencies": {
-    "@types/node": "20.2.6",
+    "@types/node": "20.3.0",
     "@types/react": "18.2.11",
     "@types/react-dom": "18.2.4",
     "@typescript-eslint/eslint-plugin": "5.59.9",
