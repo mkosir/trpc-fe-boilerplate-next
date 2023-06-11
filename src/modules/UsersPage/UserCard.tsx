@@ -7,7 +7,7 @@ export type UserCardProps = {
 
 export const UserCard = ({ user, onUserDelete }: UserCardProps) => {
   return (
-    <div className="flex m-3 p-3 rounded-md bg-blueSky-100/5 shadow shadow-blueSky-150/50">
+    <div className="flex justify-between w-72 m-3 p-3 rounded-md bg-blueSky-100/5 shadow shadow-blueSky-150/50">
       <div>
         <div>{user.name}</div>
         <div className="italic text-gray-400">{user.username}</div>
@@ -15,7 +15,7 @@ export const UserCard = ({ user, onUserDelete }: UserCardProps) => {
         {/* {isDeletingUser && <Progress />} */}
         <button onClick={() => onUserDelete(user.id)}>Delete</button>
       </div>
-      <img src={user.imageUrl ?? '/no-user.jpg'} alt={user.username} className="rounded ml-2 h-24" />
+      <img src={user.imageUrl ?? '/no-user.jpg'} alt={user.username} className="rounded ml-4 h-24" />
     </div>
   );
 };
