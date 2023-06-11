@@ -23,8 +23,7 @@ jobs:
         uses: ./.github/workflows/actions/setup_node-cache_dep-install_dep
 
       - name: Build 🏗️
-        run: |
-          npm run build
+        run: npm run build
 
       - name: Cache build ⚡
         id: cache_build
