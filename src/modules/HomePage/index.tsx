@@ -9,8 +9,8 @@ export const HomePage = () => {
     seedDbMutation.mutate();
   };
 
-  console.log('Exported - SharedSquare:', SharedSquare);
-  console.log('Exported - USER_ROLES:', USER_ROLES);
+  console.log('Exported - SharedSquare: ', SharedSquare);
+  console.log('Exported - USER_ROLES: ', USER_ROLES);
 
   return (
     <div className="flex justify-center text-center mt-10">
