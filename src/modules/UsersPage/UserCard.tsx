@@ -20,7 +20,7 @@ export const UserCard = ({ user, onUserDelete }: UserCardProps) => {
           Delete
         </button>
       </div>
-      <img src={user.imageUrl ?? '/no-user.jpg'} alt={user.username} className="rounded ml-4 h-24" />
+      <img src={user.imageUrl ?? 'no-user.jpg'} alt={user.username} className="rounded ml-4 h-24" />
     </div>
   );
 };
