@@ -14,6 +14,8 @@ jobs:
   build:
     name: Build 🏗️
     runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_TRPC_API: 'https://trpc-api-boilerplate.onrender.com/trpc'
 
     steps:
       - name: Checkout 🛎️
