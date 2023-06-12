@@ -1,4 +1,4 @@
-# tRPC Frontend Boilerplate
+# tRPC Frontend Boilerplate ![Heisenberg](/misc/heisenberg_75.png)
 
 [![CI][ci-badge]][ci-url]
 
