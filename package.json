@@ -6,7 +6,7 @@
     "trpc-api-import": "ts-node trpc-api-import/index.ts",
     "prepare": "husky install",
     "dev": "open http://localhost:3000 && NEXT_PUBLIC_TRPC_API=http://localhost:4000/trpc next dev",
-    "build": "next build",
+    "build": "NEXT_PUBLIC_TRPC_API=https://trpc-api-boilerplate.onrender.com/trpc next build",
     "lint": "next lint",
     "lint-fix": "eslint --fix .",
     "lint-staged-husky": "lint-staged",
