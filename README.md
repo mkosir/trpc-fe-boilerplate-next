@@ -16,9 +16,9 @@ Monorepos are great, but sometimes we are targeting backend and frontend as sepa
 
 _Easily set up a local development environment_
 
-- fork & clone repo
+- clone repo
 - `npm install`
-- `npm run trpc-api-import`
+- `npm run dev`
 - use latest tRPC API in your app 🚀
 
 ## Example Repo
