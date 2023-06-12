@@ -1,6 +1,6 @@
 {
   "name": "trpc-fe-boilerplate",
-  "version": "0.0.0",
+  "version": "0.0.10",
   "private": true,
   "scripts": {
     "trpc-api-import": "ts-node trpc-api-import/index.ts",
