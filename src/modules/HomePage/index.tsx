@@ -1,4 +1,6 @@
-import { SharedSquare, USER_ROLES, trpcApiBoilerplateClient } from 'common/trpc-api-boilerplate';
+import { SharedSquare, USER_ROLES } from 'trpc-api-boilerplate';
+
+import { trpcApiBoilerplateClient } from 'common/trpc-api-boilerplate';
 
 export const HomePage = () => {
   const seedDbMutation = trpcApiBoilerplateClient.util.seedDb.useMutation({
