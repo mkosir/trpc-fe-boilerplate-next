@@ -20,7 +20,7 @@ export const UsersPage = () => {
   return (
     <div>
       <h3>👤 Users</h3>
-      <div className="flex flex-wrap mt-4">
+      <div className="mt-4 flex flex-wrap">
         {!users
           ? 'Loading...'
           : users.map((user) => <UserCard key={user.id} user={user} onUserDelete={handleUserDelete} />)}

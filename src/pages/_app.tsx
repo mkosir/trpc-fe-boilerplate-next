@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <trpcApiBoilerplateClient.Provider client={trpcApiBoilerplateClientProvider} queryClient={reactQueryClient}>
         <QueryClientProvider client={reactQueryClient}>
-          <div className="flex p-3 bg-blueSky-100/40">
+          <div className="flex bg-blueSky-100/40 p-3">
             <Link href="/" className="text-blueSky-700 hover:text-blueSky-800">
               Home
             </Link>
