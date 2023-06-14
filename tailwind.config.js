@@ -18,6 +18,16 @@ module.exports = {
           950: '#1f4e61',
         },
       },
+      keyframes: {
+        'text-appear': {
+          '0%': { opacity: 0, transform: 'translateY(0)' },
+          '50%': { opacity: 1 },
+          '100%': { opacity: 0, transform: 'translateY(-80%)' },
+        },
+      },
+      animation: {
+        'text-appear': 'text-appear 2.5s 1',
+      },
     },
   },
   plugins: [],
