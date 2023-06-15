@@ -31,7 +31,7 @@ export const UserCard = ({ user }: UserCardProps) => {
           disabled={isDeletingUser}
           onClick={handleUserDelete}
         >
-          {isDeletingUser && '...'} Delete
+          {isDeletingUser ? <span className="animate-pulse">Deleting...</span> : 'Delete'}
         </button>
       </div>
       <img src={user.imageUrl ?? 'no-user.jpg'} alt={user.username} className="ml-4 h-24 rounded" />
