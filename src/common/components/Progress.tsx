@@ -3,7 +3,7 @@ export type ProgressProps = {
 };
 
 export const Progress = ({ size = 'md' }: ProgressProps) => {
-  const progressSize = size === 'md' ? 8 : 6;
+  const progressSize = size === 'md' ? 8 : 4;
 
   return (
     <div
