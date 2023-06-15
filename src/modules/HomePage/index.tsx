@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { SharedSquare, USER_ROLES } from 'trpc-api-boilerplate';
+import { SharedSquareObject, USER_ROLES } from 'trpc-api-boilerplate';
 
 import { trpcApiBoilerplateClient } from 'common/trpc-api-boilerplate';
 
@@ -14,7 +14,7 @@ export const HomePage = () => {
     seedDbMutation.mutate();
   };
 
-  console.log('Exported - SharedSquare: ', SharedSquare);
+  console.log('Exported - SharedSquareObject: ', SharedSquareObject);
   console.log('Exported - USER_ROLES: ', USER_ROLES);
 
   return (
