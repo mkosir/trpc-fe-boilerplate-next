@@ -6,16 +6,12 @@ import { trpcApiBoilerplateClient } from 'common/trpc-api-boilerplate';
 export const HomePage = () => {
   const [dbSeedMessage, setDbSeedMessage] = useState<null | string>(null);
 
-  const seedDbMutation = trpcApiBoilerplateClient.util.seedDb.useMutation({
+  const { mutate: mutateSeedDb } = trpcApiBoilerplateClient.util.seedDb.useMutation({
     onSuccess: setDbSeedMessage,
   });
 
-  const handleSeedDb = () => {
-    seedDbMutation.mutate();
-  };
-
-  console.log('Exported - SharedSquareObject: ', SharedSquareObject);
-  console.log('Exported - USER_ROLES: ', USER_ROLES);
+  console.info('Exported - SharedSquareObject: ', SharedSquareObject);
+  console.info('Exported - USER_ROLES: ', USER_ROLES);
 
   return (
     <div className="mt-10 flex justify-center text-center">
@@ -28,7 +24,7 @@ export const HomePage = () => {
         <div className="mb-1 text-lg font-medium">tRPC Frontend Boilerplate</div>
         <button
           className="mb-5 rounded bg-blueSky-400 p-1 px-3 text-sm text-white hover:bg-blueSky-500 active:bg-blueSky-600"
-          onClick={handleSeedDb}
+          onClick={() => mutateSeedDb()}
         >
           Seed DB
         </button>
