@@ -1,3 +1,4 @@
+import { Progress } from 'common/components';
 import { trpcApiBoilerplateClient } from 'common/trpc-api-boilerplate';
 
 export const BatchesPage = () => {
@@ -8,7 +9,7 @@ export const BatchesPage = () => {
       <h3>💊 Batches</h3>
       <div className="my-2 italic">Total No. of batches: {batches?.length}</div>
       {!batches ? (
-        'Loading...'
+        <Progress />
       ) : (
         <ul className="list-inside list-disc">
           {batches.map((batch) => (

@@ -10,7 +10,7 @@ export const UsersPage = () => {
     <div>
       <h3>👤 Users</h3>
       <div className="mt-4 flex flex-wrap">
-        {!users ? <Progress size="sm" /> : users.map((user) => <UserCard key={user.id} user={user} />)}
+        {!users ? <Progress /> : users.map((user) => <UserCard key={user.id} user={user} />)}
       </div>
     </div>
   );

@@ -1,13 +1,7 @@
-export type ProgressProps = {
-  size?: 'sm' | 'md';
-};
-
-export const Progress = ({ size = 'md' }: ProgressProps) => {
-  const progressSize = size === 'md' ? 8 : 4;
-
+export const Progress = () => {
   return (
     <div
-      className={`w inline-block h-${progressSize} w-${progressSize} animate-spin rounded-full border-[3px] border-current border-t-transparent text-blueSky-300`}
+      className="w inline-block h-5 w-5 animate-spin rounded-full border-[3px] border-current border-t-transparent text-blueSky-300"
       role="status"
       aria-label="loading"
     >
