@@ -15,8 +15,8 @@
     "format-fix": "prettier --config .prettierrc --write --ignore-unknown -l ."
   },
   "dependencies": {
-    "@tanstack/react-query": "4.29.13",
-    "@tanstack/react-query-devtools": "4.29.13",
+    "@tanstack/react-query": "4.29.14",
+    "@tanstack/react-query-devtools": "4.29.14",
     "@trpc/client": "10.30.0",
     "@trpc/react-query": "10.30.0",
     "@trpc/server": "10.30.0",
@@ -24,7 +24,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "superjson": "1.12.3",
-    "trpc-api-boilerplate": "1.0.9",
+    "trpc-api-boilerplate": "1.0.10",
     "zod": "3.21.4"
   },
   "devDependencies": {
@@ -43,7 +43,7 @@
     "eslint-plugin-react-hooks": "4.6.0",
     "husky": "8.0.3",
     "lint-staged": "13.2.2",
-    "octokit": "2.0.19",
+    "octokit": "2.0.21",
     "postcss": "8.4.24",
     "prettier": "2.8.8",
     "prettier-plugin-tailwindcss": "0.3.0",
