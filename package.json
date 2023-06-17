@@ -24,7 +24,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "superjson": "1.12.3",
-    "trpc-api-boilerplate": "1.0.10",
+    "trpc-api-boilerplate": "1.0.11",
     "zod": "3.21.4"
   },
   "devDependencies": {
@@ -34,7 +34,7 @@
     "@typescript-eslint/eslint-plugin": "5.59.11",
     "@typescript-eslint/parser": "5.59.11",
     "autoprefixer": "10.4.14",
-    "eslint": "8.42.0",
+    "eslint": "8.43.0",
     "eslint-config-prettier": "8.8.0",
     "eslint-import-resolver-typescript": "3.5.5",
     "eslint-plugin-import": "2.27.5",
@@ -43,7 +43,7 @@
     "eslint-plugin-react-hooks": "4.6.0",
     "husky": "8.0.3",
     "lint-staged": "13.2.2",
-    "octokit": "2.0.21",
+    "octokit": "2.0.22",
     "postcss": "8.4.24",
     "prettier": "2.8.8",
     "prettier-plugin-tailwindcss": "0.3.0",
