@@ -15,15 +15,15 @@
     "format-fix": "prettier --config .prettierrc --write --ignore-unknown -l ."
   },
   "dependencies": {
-    "@tanstack/react-query": "4.29.23",
-    "@tanstack/react-query-devtools": "4.29.23",
+    "@tanstack/react-query": "4.29.25",
+    "@tanstack/react-query-devtools": "4.29.25",
     "@trpc/client": "10.34.0",
     "@trpc/react-query": "10.34.0",
     "@trpc/server": "10.34.0",
     "next": "13.4.10",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "superjson": "1.12.4",
+    "superjson": "1.13.1",
     "trpc-api-boilerplate": "1.0.14",
     "zod": "3.21.4"
   },
@@ -31,8 +31,8 @@
     "@types/node": "20.4.2",
     "@types/react": "18.2.15",
     "@types/react-dom": "18.2.7",
-    "@typescript-eslint/eslint-plugin": "6.0.0",
-    "@typescript-eslint/parser": "6.0.0",
+    "@typescript-eslint/eslint-plugin": "6.1.0",
+    "@typescript-eslint/parser": "6.1.0",
     "autoprefixer": "10.4.14",
     "eslint": "8.45.0",
     "eslint-config-prettier": "8.8.0",
@@ -52,6 +52,6 @@
     "typescript": "5.1.6"
   },
   "engines": {
-    "node": ">=18.16.1"
+    "node": ">=18.17.0"
   }
 }
