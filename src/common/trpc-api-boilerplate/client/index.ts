@@ -3,7 +3,7 @@ import { createTRPCReact } from '@trpc/react-query';
 import superjson from 'superjson';
 import { AppRouter } from 'trpc-api-boilerplate';
 
-// Not using tRPC API as npm package - https://github.com/mkosir/trpc-api-boilerplate#avoid-publishing-package
+// Uncomment bellow line if not importing tRPC API from npm package - https://github.com/mkosir/trpc-api-boilerplate#avoid-publishing-package
 // import { AppRouter } from '../api-types';
 
 export const trpcApiBoilerplateClient = createTRPCReact<AppRouter>();
