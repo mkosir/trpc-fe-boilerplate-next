@@ -23,7 +23,7 @@ _Easily set up a local development environment_
 
 ## Import tRPC API
 
-There are 3 ways to import tRPC API types frsom backend repo:
+There are 3 ways to import tRPC API types from backend repo:
 
 1. Install npm package `npm i trpc-api-boilerplate` - [currently set](https://github.com/mkosir/trpc-fe-boilerplate/blob/main/src/common/trpc-api-boilerplate/client/index.ts#L4) as a default option
 2. Run npm script `npm run trpc-api-import` and [uncomment line](https://github.com/mkosir/trpc-fe-boilerplate/blob/main/src/common/trpc-api-boilerplate/client/index.ts#L7)
