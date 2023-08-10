@@ -36,17 +36,6 @@ module.exports = {
     '@typescript-eslint/no-confusing-void-expression': ['error', { ignoreArrowShorthand: true }],
 
     'import/no-default-export': 'error',
-    'import/order': [
-      'error',
-      {
-        groups: ['builtin', 'external', 'internal', 'parent', 'sibling'],
-        'newlines-between': 'always',
-        alphabetize: {
-          order: 'asc',
-          caseInsensitive: true,
-        },
-      },
-    ],
   },
 
   overrides: [
@@ -68,12 +57,5 @@ module.exports = {
     'next-env.d.ts',
   ],
 
-  settings: {
-    'import/resolver': {
-      typescript: { project: 'tsconfig.json' },
-    },
-    react: {
-      version: 'detect',
-    },
-  },
+  settings: { react: { version: 'detect' } },
 };
