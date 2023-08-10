@@ -1,7 +1,8 @@
-import { httpBatchLink } from '@trpc/client';
-import { createTRPCReact } from '@trpc/react-query';
 import superjson from 'superjson';
 import { AppRouter } from 'trpc-api-boilerplate';
+
+import { httpBatchLink } from '@trpc/client';
+import { createTRPCReact } from '@trpc/react-query';
 
 // Uncomment bellow line if not importing tRPC API from npm package - https://github.com/mkosir/trpc-api-boilerplate#avoid-publishing-package
 // import { AppRouter } from '../api-types';

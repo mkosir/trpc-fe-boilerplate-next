@@ -1,13 +1,11 @@
 import { QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+import { reactQueryClient } from 'common/reactQueryClient';
+import 'common/styles/global.css';
+import { trpcApiBoilerplateClient, trpcApiBoilerplateClientProvider } from 'common/trpc-api-boilerplate';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import Link from 'next/link';
-
-import { reactQueryClient } from 'common/reactQueryClient';
-import { trpcApiBoilerplateClient, trpcApiBoilerplateClientProvider } from 'common/trpc-api-boilerplate';
-
-import 'common/styles/global.css';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

@@ -1,5 +1,4 @@
 import fs from 'fs';
-
 import { Octokit } from 'octokit';
 
 type TrpcApiDist = {
