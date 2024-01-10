@@ -19,7 +19,7 @@ _Easily set up a local development environment_
 - clone repo
 - `npm install`
 - `npm run dev`
-- use latest tRPC API in your app 🚀
+- use latest tRPC API [package](https://www.npmjs.com/package/trpc-api-boilerplate) in your app 🚀
 
 ## Import tRPC API
 
