@@ -31,7 +31,7 @@ const trpcApiImport = () => {
     // auth: <GITHUB_TOKEN>,
   });
 
-  TRPC_API_DIST.filePaths.map(async (trpcApiFilePath) => {
+  void TRPC_API_DIST.filePaths.map(async (trpcApiFilePath) => {
     const octokitResponse = await octokit.rest.repos.getContent({
       owner: TRPC_API_DIST.owner,
       repo: TRPC_API_DIST.repository,
