@@ -27,6 +27,6 @@
     "sourceMap": true,
     "stripInternal": true,
   },
-  "include": [".", ".eslintrc.js"],
+  "include": [".", ".eslintrc.cjs"],
   "exclude": ["node_modules", ".next"],
 }
