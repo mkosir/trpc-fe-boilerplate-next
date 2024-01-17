@@ -19,11 +19,13 @@
     "paths": {
       ".": ["."],
     },
-  },
-  "ts-node": {
-    "compilerOptions": {
-      "module": "CommonJS",
-    },
+    "importHelpers": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "pretty": true,
+    "sourceMap": true,
+    "stripInternal": true,
   },
   "include": [".", ".eslintrc.js"],
   "exclude": ["node_modules", ".next"],
