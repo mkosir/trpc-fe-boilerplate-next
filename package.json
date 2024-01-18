@@ -2,6 +2,7 @@
   "name": "trpc-fe-boilerplate",
   "version": "0.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "trpc-api-import": "ts-node trpc-api-import/index.ts",
     "prepare": "husky install",
