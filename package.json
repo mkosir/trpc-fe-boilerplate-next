@@ -8,7 +8,7 @@
     "prepare": "husky install",
     "dev": "open http://localhost:3000 && NEXT_PUBLIC_TRPC_API=http://localhost:4000/trpc next dev",
     "build": "next build",
-    "lint": "eslint --max-warnings 0 .",
+    "lint": "eslint --report-unused-disable-directives --max-warnings 0 .",
     "lint-fix": "eslint --fix .",
     "lint-staged-husky": "lint-staged",
     "tsc": "tsc -p tsconfig.json",
