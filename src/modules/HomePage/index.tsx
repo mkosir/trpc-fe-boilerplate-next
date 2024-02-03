@@ -10,8 +10,8 @@ export const HomePage = () => {
     onSuccess: setDbSeedMessage,
   });
 
-  console.info('Exported - SharedSquareObject: ', SharedSquareObject);
-  console.info('Exported - USER_ROLES: ', USER_ROLES);
+  console.info('Exported from tRPC backend repo - SharedSquareObject: ', SharedSquareObject);
+  console.info('Exported from tRPC backend repo - USER_ROLES: ', USER_ROLES);
 
   return (
     <div className="mt-10 flex justify-center text-center">
