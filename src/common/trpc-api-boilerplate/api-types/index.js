@@ -1,6 +1,5 @@
 // src/db/User.ts
 import { z } from 'zod';
-
 var USER_ROLES = ['administrator', 'apprentice', 'standard'];
 var UserConfigSchema = z.object({
   id: z.string(),
