@@ -17,7 +17,7 @@ export const HomePage = () => {
     <div className="mt-10 flex justify-center text-center">
       <div>
         <img
-          src="https://raw.githubusercontent.com/mkosir/trpc-fe-boilerplate/main/misc/heisenberg.png"
+          src="https://raw.githubusercontent.com/mkosir/trpc-fe-boilerplate-next/main/misc/heisenberg.png"
           alt="heisenberg"
           className="mx-auto mb-1 w-[110px]"
         />

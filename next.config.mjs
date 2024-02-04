@@ -4,7 +4,7 @@ const githubPagesDeploy =
   process.env.NODE_ENV === 'production'
     ? {
         assetPrefix: './', // GitHub pages CDN
-        basePath: '/trpc-fe-boilerplate', // GitHub pages path prefix
+        basePath: '/trpc-fe-boilerplate-next', // GitHub pages path prefix
       }
     : {};
 
