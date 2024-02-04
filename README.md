@@ -1,4 +1,4 @@
-# tRPC Frontend Boilerplate ![Heisenberg](/misc/heisenberg_75.png)
+# tRPC Frontend Boilerplate - Nextjs ![Heisenberg](/misc/heisenberg_75.png)
 
 [![CI][ci-badge]][ci-url]
 
