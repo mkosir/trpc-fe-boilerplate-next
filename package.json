@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "trpc-api-import": "node --loader ts-node/esm trpc-api-import/index.ts",
+    "trpc-api-import": "npx tsx trpc-api-import/index.ts",
     "prepare": "husky",
     "dev": "open http://localhost:3000 && NEXT_PUBLIC_TRPC_API=http://localhost:4000/trpc next dev",
     "build": "next build",
