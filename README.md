@@ -4,11 +4,13 @@
 
 Minimal [tRPC](https://trpc.io/) frontend boilerplate (Nextjs) for separate BE-FE repositories. Easily consume fully typesafe APIs.
 
-Monorepos are great, but sometimes we are targeting backend and frontend as separate (mono)repositories:
+Monorepos are great, but sometimes we are targeting backend and frontend as separate (mono)repositories.
 
-- separation/encapsulation of backend and frontend domain (except what must be exposed to both through API).
-- separation of backend and frontend developers (larger teams/companies).
-- separation of backend and frontend CI/CD pipelines, PRs, issues, etc.
+We might aim for backend and frontend repositories separation of:
+
+- domain/business logic - expose only what need to be exposed through API.
+- developers - larger teams/companies.
+- CI/CD pipelines, PRs, issues, etc.
 
 ... in that case checkout this boilerplate.
 
