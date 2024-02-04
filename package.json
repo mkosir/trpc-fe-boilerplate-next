@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "trpc-api-import": "ts-node trpc-api-import/index.ts",
+    "trpc-api-import": "node --loader ts-node/esm trpc-api-import/index.ts",
     "prepare": "husky",
     "dev": "open http://localhost:3000 && NEXT_PUBLIC_TRPC_API=http://localhost:4000/trpc next dev",
     "build": "next build",
@@ -49,7 +49,6 @@
     "prettier": "3.2.5",
     "prettier-plugin-tailwindcss": "0.5.11",
     "tailwindcss": "3.4.1",
-    "ts-node": "10.9.2",
     "typescript": "5.3.3"
   },
   "engines": {
